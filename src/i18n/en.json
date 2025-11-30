@@ -1,0 +1,16 @@
+{
+    "menu": {
+        "presentation": "Create a presentation",
+        "quiz": "Create a Quiz",
+        "solveTest": "Finding the test answer",
+        "prices": "Prices",
+        "wallet": "Wallet",
+        "language": "Language",
+        "back": "Back",
+        "main": "Main menu"
+    },
+    "wallet": {
+        "balance": "Your balance: {{balance}} so'm",
+        "topupSuccess": "Your balance has been replenished: {{amount}} so'm"
+    }
+}

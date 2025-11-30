@@ -1,0 +1,16 @@
+{
+    "menu": {
+        "presentation": "Создать презентацию",
+        "quiz": "Создать тест",
+        "solveTest": "Поиск ответа на тест",
+        "prices": "Цены",
+        "wallet": "Кошелек",
+        "language": "Язык",
+        "back": "Назад",
+        "main": "Главное меню"
+    },
+    "wallet": {
+        "balance": "Ваш баланс: {{balance}} so'm",
+        "topupSuccess": "Ваш баланс пополнен: {{amount}} so'm"
+    }
+}

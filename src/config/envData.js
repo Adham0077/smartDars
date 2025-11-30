@@ -1,11 +1,26 @@
-import { config } from "dotenv";
-config();
+import dotenv from "dotenv";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+dotenv.config({ path: join(__dirname, "../../.env") });
 
 export const ENV = {
-    BOT_TOKEN: process.env.BOT_TOKEN,
-    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
-    DB_USER: process.env.DB_USER,
-    DB_PASS: process.env.DB_PASS,
-    DB_NAME: process.env.DB_NAME,
-    DB_PORT: process.env.DB_PORT || 5432,
+  BOT_TOKEN: String(process.env.BOT_TOKEN),
+  DB_HOST: String(process.env.DB_HOST || "localhost"),
+  DB_PORT: Number(process.env.DB_PORT || 5432),
+  DB_USER: String(process.env.DB_USER),
+  DB_PASS: String(process.env.DB_PASS),
+  DB_NAME: String(process.env.DB_NAME),
+  OPENAI_API_KEY: String(process.env.OPENAI_API_KEY),
+  ADMIN_IDS: (process.env.ADMIN_IDS || "")
+    .split(",")
+    .map(s => s.trim())
+    .filter(Boolean)
+    .map(String), // string sifatida aniq
+  CHANNEL_ID: String(process.env.CHANNEL_ID),
+  FILE_STORAGE_PATH: String(process.env.FILE_STORAGE_PATH || "./storage")
 };
+

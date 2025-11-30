@@ -1,0 +1,16 @@
+{
+    "menu": {
+        "presentation": "Prezentatsiya yaratish",
+        "quiz": "Quiz tuzish",
+        "solveTest": "Test javobini topish",
+        "prices": "Narxlar",
+        "wallet": "Xamyon",
+        "language": "Til",
+        "back": "Ortga",
+        "main": "Asosiy menyu"
+    },
+    "wallet": {
+        "balance": "Balansingiz: {{balance}} so'm",
+        "topupSuccess": "Balansingiz to‘ldirildi: {{amount}} so'm"
+    }
+}
